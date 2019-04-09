@@ -19,7 +19,7 @@ const calcTotals = (page)=>{
   const seats = {};
 
   parties.slice(0,cut).forEach((p,i)=> (
-    seats[p] = Math.floor(totals[i] * 120 / total)
+    seats[p] = Math.round(totals[i] * 120 / total)
   ));
 
   return seats;
