@@ -26,7 +26,7 @@ const calcTotals = (page)=>{
 }
 
 app.get('/', (req, res) => {
-  rp('https://votes21.bechirot.gov.il/')
+  rp('https://votes22.bechirot.gov.il/')
     .then(html => {
       const page = cheerio.load(html);
 
